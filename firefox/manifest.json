@@ -1,13 +1,13 @@
 {
   "manifest_version": 2,
   "name": "TL;DR",
-  "version": "1.1",
+  "version": "1.4",
 
   "description": "Adds ability to create TL;DR text out of the text page with https://tldr.cloud",
 
   "icons": {
-    "48": "../icons/tldr-48.png",
-    "96": "../icons/tldr-96.png"
+    "48": "icons/tldr-48.png",
+    "96": "icons/tldr-96.png"
   },
 
   "browser_action": {
