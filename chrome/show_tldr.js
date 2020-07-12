@@ -49,12 +49,11 @@ function requestCurrentTab(requestTlDr) {
         setUserVisibleError();
     }
 
-    gettingCurrent = browser.tabs.query({active: true, currentWindow: true});
-    gettingCurrent.then((tabs) => {
+    gettingCurrent = chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         const url = tabs[0].url;
         console.log(`Current tab url is: ${url}`);
         requestTlDr(url, onSummary);
-    }, onError);
+    });
 }
 
 requestCurrentTab(requestTlDr);

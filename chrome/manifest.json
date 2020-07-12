@@ -21,6 +21,7 @@
 
   "permissions": [
     "https://us-central1-tldr-278619.cloudfunctions.net/extract-summary",
-    "activeTab"
+    "activeTab",
+    "tabs"
   ]
 }
