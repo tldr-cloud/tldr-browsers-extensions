@@ -19,7 +19,7 @@ function requestTlDr(url, onSummary) {
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.send(JSON.stringify({
         url: url,
-        bert: true
+        bert_summary: true
     }));
     console.log("request is out");
 }
@@ -27,7 +27,7 @@ function requestTlDr(url, onSummary) {
 function onSummary(summary) {
     console.log(`Summary: ${summary}`);
     let hostElement = document.getElementById("bullets");
-    let bullets = summary.split("\n");
+    let bullets = summary.split(". ");
     addElements(hostElement, bullets);
 }
 

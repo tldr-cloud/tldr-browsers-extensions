@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "TL;DR",
-  "version": "1.4",
+  "version": "1.5",
 
   "description": "Adds ability to create TL;DR text out of the text page with https://tldr.cloud",
 
